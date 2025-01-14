@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import heroWoman from "@/public/images/hero-woman.png";
+
+
 export default function Home() {
   return (
     <>
 
-      <section className="relative min-h-screen bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100">
+      <section className="relative min-h-screen bg-header-background bg-filter blur-sm	">
         <div className="container mx-auto px-4 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Column - Image and Stats */}
             <div className="relative">
-              <div className="rounded-3xl overflow-hidden shadow-2xl">
+              <div className="rounded-3xl overflow-hidden">
                 <Image
                   src={heroWoman}
                   alt="Professional woman with technology interface"
