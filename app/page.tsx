@@ -5,10 +5,11 @@ import heroWoman from "@/public/images/hero-woman.png";
 export default function Home() {
   return (
     <>
+      <section className="relative min-h-screen">
+        <div className="absolute inset-0 bg-header-background bg-cover bg-no-repeat bg-center blur" />
 
-      <section className="relative min-h-screen bg-header-background bg-filter blur-sm	">
-        <div className="container mx-auto px-4 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="container mx-auto px-4 lg:py-20 py-5 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 gap-10 items-center">
             {/* Left Column - Image and Stats */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden">
@@ -21,14 +22,14 @@ export default function Home() {
               </div>
 
               {/* Stats Overlay */}
-              <div className="absolute bottom-4 left-4 bg-black/20 backdrop-blur-sm rounded-xl p-4 text-white">
-                <div className="text-4xl font-bold">7000 +</div>
-                <div className="text-lg">Happy Clients</div>
+              <div className="absolute lg:bottom-4 bottom-0 left-0 lg:p-4 p-1 font-bold">
+                <div className="lg:text-5xl text-2xl ">20+</div>
+                <div className="lg:text-lg text-sm">Happy Clients</div>
               </div>
 
-              <div className="absolute bottom-4 right-4 bg-black/20 backdrop-blur-sm rounded-xl p-4 text-white">
-                <div className="text-4xl font-bold">71K+</div>
-                <div className="text-lg">Clients Active</div>
+              <div className="absolute lg:bottom-5 lg:right-5 lg:p-4 bottom-5 right-3 p-2 bg-white/30 backdrop-blur rounded-xl font-bold border-2 border-[#CDA15B]">
+                <div className="lg:text-5xl text-2xl ">71K+</div>
+                <div className="lg:text-lg text-sm">Clients Active</div>
               </div>
             </div>
 
