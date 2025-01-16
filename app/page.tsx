@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import heroWoman from "@/public/images/hero-woman.png";
+import Header from "@/app/components/Header";
 
 
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen">
-        <div className="absolute inset-0 bg-header-background bg-cover bg-no-repeat bg-center blur" />
+      <section className="relative min-h-screen bg-header-background  bg-no-repeat bg-cover">
 
-        <div className="container mx-auto px-4 lg:py-20 py-5 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 gap-10 items-center">
+        <Header />
+          
+        <div className="absolute inset-0 backdrop-blur " />
+
+        <div className="container mx-auto px-4 relative z-10 ">
+          <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-2 lg:gap-24 ">
             {/* Left Column - Image and Stats */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden">
@@ -45,7 +49,7 @@ export default function Home() {
 
               {/* CTA Box */}
 
-              <div className="bg-white/30 backdrop-blur-sm rounded-2xl p-6 shadow-lg border-2 border-primary">
+              <div className="bg-white/20 backdrop-blur rounded-2xl p-6 shadow-lg border-2 border-primary">
                 <div className="flex items-center justify-between flex-col-reverse gap-5 lg:flex-row ">
                   <a href="" className="bg-primary text-secondary px-8 py-3 rounded-xl font-bold w-full text-center lg:w-auto">
                     Contact Us
@@ -75,6 +79,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
           </div>
         </div>
       </section>

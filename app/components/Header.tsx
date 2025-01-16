@@ -20,12 +20,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 w-full border border-transparent backdrop-blur">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-black text-white rounded-full my-5 container">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-[#E6B422]">
+            <Link href="/" className="text-2xl font-black text-primary">
               Jerika Inc
             </Link>
           </div>
@@ -36,8 +36,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-[#E6B422]
-                  ${pathname === item.href ? 'text-[#E6B422]' : 'text-white'}`}
+                className={`text-sm font-medium transition-colors hover:text-primary
+                  ${pathname === item.href ? 'text-primary' : 'text-white'}`}
               >
                 {item.name}
               </Link>
@@ -48,7 +48,7 @@ const Header = () => {
           <div className="hidden md:flex items-center">
             <button
               aria-label="Toggle dark mode"
-              className="p-2 text-[#E6B422] rounded-full hover:bg-gray-800"
+              className="p-2 text-primary rounded-full hover:bg-gray-800"
             >
               <Moon size={20} />
             </button>
@@ -58,7 +58,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-white hover:text-[#E6B422]"
+              className="text-white hover:text-primary"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
               aria-label="Toggle menu"
@@ -78,8 +78,8 @@ const Header = () => {
                   href={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium
                     ${pathname === item.href
-                      ? 'text-[#E6B422] bg-gray-900'
-                      : 'text-white hover:text-[#E6B422] hover:bg-gray-900'
+                      ? 'text-primary bg-gray-900'
+                      : 'text-white hover:text-primary hover:bg-gray-900'
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
