@@ -12,6 +12,8 @@ const config: Config = {
         'header-background': "url('/images/header-bg.jpg')",
       },
       colors: {
+        primary: '#D4AA70',
+        secondary: "#000000",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
