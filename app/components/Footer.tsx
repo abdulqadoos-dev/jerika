@@ -36,20 +36,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <Link href="/" className="text-2xl font-bold text-[#E6B422]">
+            <Link href="/" className="text-2xl font-bold text-primary">
               JERIKA Inc
             </Link>
             <div className="space-y-2 text-gray-300">
               <p>1 King Street West,</p>
               <p>Toronto, ON M5H 1A1</p>
               <p>Canada</p>
-              <a href="mailto:info@jerika.ca" className="block hover:text-[#E6B422]">
+              <a href="mailto:info@jerika.ca" className="block hover:text-primary">
                 info@jerika.ca
               </a>
-              <a href="tel:+16472706400" className="block hover:text-[#E6B422]">
+              <a href="tel:+16472706400" className="block hover:text-primary">
                 (647) 270-6400
               </a>
-              <a href="tel:+15197889917" className="block hover:text-[#E6B422]">
+              <a href="tel:+15197889917" className="block hover:text-primary">
                 (519) 788-9917
               </a>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.menu.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-300 hover:text-[#E6B422]">
+                  <Link href={link.href} className="text-gray-300 hover:text-primary">
                     {link.name}
                   </Link>
                 </li>
@@ -75,7 +75,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.industries.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-300 hover:text-[#E6B422]">
+                  <Link href={link.href} className="text-gray-300 hover:text-primary">
                     {link.name}
                   </Link>
                 </li>
@@ -89,7 +89,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-300 hover:text-[#E6B422]">
+                  <Link href={link.href} className="text-gray-300 hover:text-primary">
                     {link.name}
                   </Link>
                 </li>
@@ -101,18 +101,18 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-semibold">Toll Free</h3>
-              <a href="tel:+18444537452" className="text-[#E6B422] hover:text-[#E6B422] text-lg">
+              <a href="tel:+18444537452" className="text-primary hover:text-primary text-lg">
                 1 844 4JERIKA
               </a>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-[#E6B422]" aria-label="LinkedIn">
+              <a href="#" className="text-gray-300 hover:text-primary" aria-label="LinkedIn">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#E6B422]" aria-label="Facebook">
+              <a href="#" className="text-gray-300 hover:text-primary" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-[#E6B422]" aria-label="Instagram">
+              <a href="#" className="text-gray-300 hover:text-primary" aria-label="Instagram">
                 <Instagram size={24} />
               </a>
             </div>

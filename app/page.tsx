@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import heroWoman from "@/public/images/hero-woman.png";
 import Header from "@/app/components/Header";
-
+import Consultation from '@/app/components/Consultation';
+import Button from "@/app/components/ui/Button";
 
 export default function Home() {
   return (
@@ -9,10 +10,10 @@ export default function Home() {
       <section className="relative min-h-screen bg-header-background  bg-no-repeat bg-cover">
 
         <Header />
-          
+
         <div className="absolute inset-0 backdrop-blur " />
 
-        <div className="container mx-auto px-4 relative z-10 ">
+        <div className="container mx-auto lg:p-10 p-5 relative z-10 ">
           <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-2 lg:gap-24 ">
             {/* Left Column - Image and Stats */}
             <div className="relative">
@@ -39,10 +40,10 @@ export default function Home() {
 
             {/* Right Column - Content */}
             <div className="space-y-8 text-secondary">
-              <h1 className="text-4xl font-bold lg:text-6xl">
+              <h1 className="text-4xl font-bold lg:text-8xl">
                 Choose Us <span className="italic">for</span>
                 <br />
-                <span className="text-3xl lg:text-5xl text-secondary">Smarter & Faster</span>
+                <span className="text-3xl lg:text-6xl text-secondary">Smarter & Faster</span>
                 <br />
                 Solutions.
               </h1>
@@ -51,9 +52,9 @@ export default function Home() {
 
               <div className="bg-white/20 backdrop-blur rounded-2xl p-6 shadow-lg border-2 border-primary">
                 <div className="flex items-center justify-between flex-col-reverse gap-5 lg:flex-row ">
-                  <a href="" className="bg-primary text-secondary px-8 py-3 rounded-xl font-bold w-full text-center lg:w-auto">
-                    Contact Us
-                  </a>
+                  
+                  <Button variant="primary" size="lg" className="lg:w-auto w-full">Contact Us</Button>
+
                   <div className="flex gap-12">
                     <div>
                       <div className="text-3xl font-bold">400+</div>
@@ -83,6 +84,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      <Consultation />
 
     </>
   );
