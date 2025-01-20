@@ -20,8 +20,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border border-transparent backdrop-blur">
-      <div className="mx-auto container px-4 sm:px-6 lg:px-8 bg-black text-white lg:rounded-full rounded-lg my-5 ">
+    <header className="fixed top-0 z-40 w-full px-5">
+      <div className={`mx-auto container px-10 sm:px-6 lg:px-8 bg-black/90 backdrop-blur text-white lg:rounded-full  my-5 ${isMenuOpen ? "rounded-3xl" : "rounded-full"} `}>
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -78,8 +78,8 @@ const Header = () => {
                   href={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium
                     ${pathname === item.href
-                      ? 'text-primary bg-gray-900'
-                      : 'text-white hover:text-primary hover:bg-gray-900'
+                      ? 'text-primary bg-secondary'
+                      : 'text-white hover:text-primary hover:bg-secondary'
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

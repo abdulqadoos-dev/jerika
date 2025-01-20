@@ -3,17 +3,16 @@ import heroWoman from "@/public/images/hero-woman.png";
 import Header from "@/app/components/Header";
 import Consultation from '@/app/components/Consultation';
 import Button from "@/app/components/ui/Button";
+import MissionSection from '@/app/components/MissionSection';
+import ServicesGrid from './components/ServicesGrid';
 
 export default function Home() {
   return (
     <>
+
       <section className="relative min-h-screen bg-header-background  bg-no-repeat bg-cover">
-
-        <Header />
-
         <div className="absolute inset-0 backdrop-blur " />
-
-        <div className="container mx-auto lg:p-10 p-5 relative z-10 ">
+        <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 ">
           <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-2 lg:gap-24 ">
             {/* Left Column - Image and Stats */}
             <div className="relative">
@@ -86,7 +85,13 @@ export default function Home() {
       </section>
 
 
+      <ServicesGrid />
+
+      <MissionSection />
+
       <Consultation />
+
+
 
     </>
   );

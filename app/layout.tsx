@@ -25,9 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ubuntu.className} antialiased`}
+        className={`${ubuntu.className} antialiased bg-white`}
       >
-        {/* <Header /> */}
+        <Header />
         <main>
           {children}
         </main>
