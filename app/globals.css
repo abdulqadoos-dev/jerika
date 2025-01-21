@@ -26,3 +26,23 @@ body {
     text-wrap: balance;
   }
 }
+
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-33.33% - 0px));
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}
+
+
+/* Optional: Pause on hover */
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}

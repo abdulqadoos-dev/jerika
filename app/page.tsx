@@ -1,15 +1,14 @@
 import Image from 'next/image';
 import heroWoman from "@/public/images/hero-woman.png";
-import Header from "@/app/components/Header";
 import Consultation from '@/app/components/Consultation';
 import Button from "@/app/components/ui/Button";
 import MissionSection from '@/app/components/MissionSection';
-import ServicesGrid from './components/ServicesGrid';
+import ServicesGrid from '@/app/components/ServicesGrid';
+import BrandsSlider from '@/app/components/BrandsSlider';
 
 export default function Home() {
   return (
     <>
-
       <section className="relative min-h-screen bg-header-background  bg-no-repeat bg-cover">
         <div className="absolute inset-0 backdrop-blur " />
         <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 ">
@@ -85,6 +84,8 @@ export default function Home() {
       </section>
 
 
+      <BrandsSlider />
+    
       <ServicesGrid />
 
       <MissionSection />

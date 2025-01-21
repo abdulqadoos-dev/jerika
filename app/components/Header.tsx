@@ -1,4 +1,3 @@
-// src/components/layout/header/index.js
 'use client';
 
 import { useState } from 'react';
