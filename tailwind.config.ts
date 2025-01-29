@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'header-background': "url('/images/header-bg.jpg')",
+        'web-service': "url('/images/web-services-bg.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
       },
       colors: {
