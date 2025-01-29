@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 import Button from "@/app/components/ui/Button";
 
@@ -16,7 +15,7 @@ const Consultation = () => {
   return (
     <section className="relative min-h-screen bg-secondary overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-radial from-white/30 to-secondary z-10" />
+      <div className="absolute inset-0 bg-gradient-radial from-white/20 to-secondary z-10" />
 
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 py-20 text-center">

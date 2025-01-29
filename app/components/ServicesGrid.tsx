@@ -1,56 +1,74 @@
-// app/components/ServicesGrid.jsx
+'use client';
+
 const ServicesGrid = () => {
-    return (
-      <section className="bg-black py-20">
-        <div className="container mx-auto px-4">
-          {/* Header */}
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
-              Get our Professional Services
-            </h2>
-            <p className="text-gray-300 max-w-3xl mx-auto">
-              Jerika Inc gives the most Professional Tech Services with over 2000+ Experienced Software Engineers
-            </p>
+
+  return (
+    <section className="bg-black py-20 relative overflow-hidden">
+
+     {/* Background gradient overlay */}
+     <div className="absolute inset-0 bg-gradient-radial from-white/10 to-secondary z-10" />
+
+      <div className="container mx-auto px-4 relative z-20">
+        {/* Header */}
+
+
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Get our Professional Services
+          </h2>
+          <p className="text-gray-300 max-w-3xl mx-auto">
+            Jerika Inc gives the most Professional Tech Services with over 2000+ Experienced Software Engineers
+          </p>
+        </div>
+
+        <div className="grid grid-cols-11 grid-rows-6 gap-4 h-[60vh] p-4 relative">
+
+
+          {/* IT SERVICES */}
+          <div className=" col-start-1 col-end-3 row-start-1 row-end-5 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-fade-in ">
+            <h2 className="text-2xl font-bold mb-2">IT SERVICES</h2>
+            {/* <p className="text-gray-300">Professional IT solutions</p> */}
           </div>
-  
-          {/* Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-7xl mx-auto">
-            {/* IT Services - Spans 2 rows */}
-            <div className="md:col-span-1 md:row-span-2 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-bold">IT SERVICES</h3>
-            </div>
-  
-            {/* Network Monitoring */}
-            <div className="md:col-span-1 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <div>
-                <h3 className="text-white text-xl font-bold">NETWORK</h3>
-                <h3 className="text-amber-500 text-xl font-bold">MONITORING</h3>
-              </div>
-            </div>
-  
-            {/* IT Security */}
-            <div className="md:col-span-1 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-bold">IT SECURITY</h3>
-            </div>
-  
-            {/* Managed IT Services */}
-            <div className="md:col-span-2 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-bold">MANAGED IT SERVICES</h3>
-            </div>
-  
-            {/* Microsoft Office 365 */}
-            <div className="md:col-span-2 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-bold">MICROSOFT OFFICE 365</h3>
-            </div>
-  
-            {/* IT Helpdesk */}
-            <div className="md:col-span-1 md:row-span-2 bg-zinc-900 rounded-3xl p-6 flex items-center justify-center">
-              <h3 className="text-white text-2xl font-bold">IT HELPDESK</h3>
-            </div>
+
+          {/* NETWORK MONITORING */}
+          <div className=" col-start-1 col-end-3 row-start-5 row-end-7 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-slide-in-up delay-200 ">
+            <h2 className="text-xl font-bold mb-2">NETWORK <span className="text-primary"> MONITORING </span></h2>
+            {/* <p className="text-gray-300">24/7 network surveillance</p> */}
+          </div>
+
+          {/* IT SECURITY */}
+          <div className=" col-start-3 col-end-6 row-start-1 row-end-3 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-scale-in delay-300 ">
+            <h2 className="text-xl font-bold mb-2">IT SECURITY</h2>
+            {/* <p className="text-gray-300">Advanced protection systems</p> */}
+          </div>
+
+          {/* MANAGED IT SERVICES */}
+          <div className=" col-start-6 col-end-10 row-start-1 row-end-3 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-slide-in-right delay-400 ">
+            <h2 className="text-xl font-bold mb-2">MANAGED IT SERVICES</h2>
+            {/* <p className="text-gray-300">Comprehensive IT management</p> */}
+          </div>
+
+          {/* MICROSOFT OFFICE 365 */}
+          <div className=" col-start-3 col-end-10 row-start-3 row-end-7 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-8 animate-fade-in delay-500 ">
+            <h2 className="text-2xl font-bold mb-2">MICROSOFT OFFICE 365</h2>
+            {/* <p className="text-gray-300">Productivity suite solutions</p> */}
+          </div>
+
+          {/* MONITORING */}
+          <div className=" col-start-10 col-end-12 row-start-1 row-end-3 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-rotate-in delay-600 ">
+            <h2 className="text-xl font-bold mb-2">MONITORING</h2>
+            {/* <p className="text-gray-300">Real-time system tracking</p> */}
+          </div>
+
+          {/* IT HELPDESK */}
+          <div className=" col-start-10 col-end-12 row-start-3 row-end-7 bg-black border-2 border-white/35 rounded-3xl flex flex-col items-center justify-center text-white text-center p-4 animate-slide-in-left delay-700 ">
+            <h2 className="text-xl font-bold mb-2">IT HELPDESK</h2>
+            {/* <p className="text-gray-300">24/7 technical support</p> */}
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default ServicesGrid;
+      </div>
+    </section>
+  );
+};
+
+export default ServicesGrid;
