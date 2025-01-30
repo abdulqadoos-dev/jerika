@@ -2,9 +2,11 @@ import Image from 'next/image';
 
 import AboutMain from "@/public/images/about-main.png";
 
-
 import ManagedITServices from "@/app/components/ManagedITServices";
 import WebServicesSection from '@/app/components/WebServicesSection';
+import SecurityServices from '@/app/components/SecurityServices';
+import NetworkMonitoringServices from '@/app/components/NetworkMonitoringServices';
+import ITStaffingSection from '@/app/components/ITStaffingSection';
 
 export default function Services() {
    return (
@@ -72,6 +74,12 @@ export default function Services() {
          <ManagedITServices />
 
          <WebServicesSection />
+
+         <SecurityServices />
+
+         <ITStaffingSection />
+
+         <NetworkMonitoringServices />
 
 
 
