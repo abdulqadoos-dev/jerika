@@ -11,7 +11,8 @@ const config: Config = {
       backgroundImage: {
         'header-background': "url('/images/header-bg.jpg')",
         'web-service': "url('/images/web-services-bg.jpg')",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-secondary-fade': 'linear-gradient(to bottom, rgb(var(--color-secondary)), rgba(var(--color-secondary), 0.7), rgba(var(--color-secondary), 0.4), white)',
       },
       colors: {
         primary: '#D4AA70',

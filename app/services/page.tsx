@@ -7,6 +7,7 @@ import WebServicesSection from '@/app/components/WebServicesSection';
 import SecurityServices from '@/app/components/SecurityServices';
 import NetworkMonitoringServices from '@/app/components/NetworkMonitoringServices';
 import ITStaffingSection from '@/app/components/ITStaffingSection';
+import Consultation from '@/app/components/Consultation';
 
 export default function Services() {
    return (
@@ -81,6 +82,7 @@ export default function Services() {
 
          <NetworkMonitoringServices />
 
+         <Consultation />
 
 
       </>

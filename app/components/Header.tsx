@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { Menu, X, Moon } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
+import Logo from "@/public/images/logo.png"
+import Image from "next/image"
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -24,8 +27,15 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-black text-primary">
-              Jerika Inc
+            <Link href="/" className="text-2xl font-black">
+              <Image
+                src={Logo}
+                alt="Jerika Inc Logo"
+                width={120} // Adjust based on your logo size
+                height={40} // Adjust based on your logo size
+                priority // This is good for logos above the fold
+                className="object-contain" // This helps maintain aspect ratio
+              />
             </Link>
           </div>
 
