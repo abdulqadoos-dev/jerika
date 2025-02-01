@@ -5,7 +5,7 @@ import StoryImage from "@/public/images/our-story.png";
 const OurStory = () => {
    return (
       <section className="bg-gradient-secondary-fade py-20">
-         <div className="container mx-auto rounded-[50px] overflow-clip  relative bg-header-background bg-no-repeat md:bg-bottom bg-cover">
+         <div className="container mx-auto rounded-[50px] overflow-clip  relative bg-header-background bg-no-repeat md:bg-bottom bg-cover shadow-2xl">
 
             <div className="absolute inset-0 backdrop-blur-3xl bg-white/10" />
 
