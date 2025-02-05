@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+
 import Link from 'next/link';
 import { Menu, X, Moon } from 'lucide-react';
 import { usePathname } from 'next/navigation';
@@ -11,6 +12,7 @@ import Image from "next/image"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const menuRef = useRef(null);
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -23,18 +25,18 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 z-40 w-full px-5">
-      <div className={`mx-auto container px-10 sm:px-6 lg:px-8 bg-black/90 backdrop-blur text-white lg:rounded-full  my-5 ${isMenuOpen ? "rounded-3xl" : "rounded-full"} `}>
-        <div className="flex justify-between items-center h-16">
+      <div className={`mx-auto container px-10 sm:px-6 lg:px-8 bg-black/90 backdrop-blur text-white lg:rounded-full  my-5 ${isMenuOpen ? "rounded-2xl" : "rounded-2xl"} `}>
+        <div className="flex justify-between items-center  h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-2xl font-black">
               <Image
                 src={Logo}
                 alt="Jerika Inc Logo"
-                width={120} // Adjust based on your logo size
-                height={40} // Adjust based on your logo size
-                priority // This is good for logos above the fold
-                className="object-contain" // This helps maintain aspect ratio
+                width={120} 
+                height={40} 
+                priority 
+                className="object-contain" 
               />
             </Link>
           </div>
@@ -45,7 +47,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary
+                className={`text-base tracking-wider font-bold transition-colors hover:text-primary
                   ${pathname === item.href ? 'text-primary' : 'text-white'}`}
               >
                 {item.name}
@@ -67,7 +69,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-white hover:text-primary"
+              className="text-white hover:text-primary mt-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
               aria-label="Toggle menu"
@@ -77,15 +79,51 @@ const Header = () => {
           </div>
         </div>
 
+        <div
+          className={`
+        md:hidden 
+        transition-all 
+        duration-300 
+        ease-in-out
+        overflow-hidden
+        ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
+      `}
+        >
+          <div
+            ref={menuRef}
+            className={`
+          px-2 pt-2 pb-3 space-y-1
+          transform transition-transform duration-300
+          ${isMenuOpen ? 'translate-y-0' : '-translate-y-4'}
+        `}
+          >
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={` block px-3 py-2 rounded-md text-xl font-bold transition-all duration-200
+                   ${pathname === item.href
+                    ? 'text-primary bg-secondary'
+                    : 'text-white hover:text-primary hover:bg-secondary'
+                  }
+            `}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Mobile Navigation */}
-        {isMenuOpen && (
+        {/* {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`block px-3 py-2 rounded-md text-base font-medium
+                  className={`block px-3 py-2 rounded-md text-xl font-bold
                     ${pathname === item.href
                       ? 'text-primary bg-secondary'
                       : 'text-white hover:text-primary hover:bg-secondary'
@@ -97,7 +135,7 @@ const Header = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </header>
   );
