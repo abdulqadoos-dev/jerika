@@ -7,27 +7,27 @@ export default function Services() {
    return (
       <>
          <section className="relative min-h-screen bg-header-background bg-no-repeat bg-cover flex items-center">
-            <div className="absolute inset-0 backdrop-blur-2xl bg-gradient-to-b from-white/20 to-white" />
+            <div className="absolute inset-0 backdrop-blur-2xl bg-gradient-to-b from-white/10 to-white" />
 
-            <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 flex flex-col md:justify-between md:gap-60 gap-10">
+            <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 flex flex-col md:gap-40 gap-10">
 
-               <div className="text-center">
-                  <h2 className="font-extrabold text-secondary md:text-7xl text-3xl ">
-                     <span className="font-light italic">Get the Best</span> Services
+               <div className="text-center space-y-5">
+                  <h2 className="font-extrabold text-secondary md:text-8xl text-3xl ">
+                     <span className="font-light italic">Our</span> Services
                   </h2>
-                  <p className="text-primary text-lg md:text-4xl md:tracking-[0.25em] font-bold ">We Get the Right Person for the Right Job</p>
+                  {/* <p className="text-primary text-lg md:text-4xl md:tracking-[0.25em] font-bold ">We Get the Right Person for the Right Job</p> */}
                </div>
 
 
-               <div className="grid md:grid-cols-4 grid-cols-2 gap-5 text-center">
-                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 h-80 flex items-center justify-center flex-col border hover:border-secondary/20 shadow-lg">
-                     <div className="bg-primary p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+               <div className="grid md:grid-cols-4 grid-cols-2 gap-12 text-center">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 h-80 flex items-center justify-center flex-col">
+                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={86}
                            height={92}
                            viewBox="0 0 86 92"
                            fill="none"
-                           className="h-10 w-10"
+                           className="h-14 w-14"
                            xmlns="http://www.w3.org/2000/svg"
                         >
                            <path
@@ -42,14 +42,14 @@ export default function Services() {
                      </p>
                   </div>
 
-                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col border hover:border-secondary/20 shadow-lg">
-                     <div className="bg-primary p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col">
+                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={92}
                            height={92}
                            viewBox="0 0 92 92"
                            fill="none"
-                           className="h-10 w-10"
+                           className="h-14 w-14"
                            xmlns="http://www.w3.org/2000/svg"
                         >
                            <path
@@ -64,14 +64,14 @@ export default function Services() {
                      </p>
                   </div>
 
-                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center h-80 flex items-center justify-center flex-col border hover:border-secondary/20 shadow-lg">
-                     <div className="bg-primary p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center h-80 flex items-center justify-center flex-col">
+                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={79}
                            height={92}
                            viewBox="0 0 79 92"
                            fill="none"
-                           className="h-10 w-10"
+                           className="h-14 w-14"
                            xmlns="http://www.w3.org/2000/svg"
                         >
                            <path
@@ -86,14 +86,14 @@ export default function Services() {
                      </p>
                   </div>
 
-                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col border hover:border-secondary/20 shadow-lg">
-                     <div className="bg-primary p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col">
+                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={91}
                            height={92}
                            viewBox="0 0 91 92"
                            fill="none"
-                           className="h-10 w-10"
+                           className="h-14 w-14"
                            xmlns="http://www.w3.org/2000/svg"
                         >
                            <path

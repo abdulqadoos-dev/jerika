@@ -47,7 +47,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-base tracking-wider font-bold transition-colors hover:text-primary
+                className={`text-base tracking-wider font-semibold transition-colors hover:text-primary
                   ${pathname === item.href ? 'text-primary' : 'text-white'}`}
               >
                 {item.name}
