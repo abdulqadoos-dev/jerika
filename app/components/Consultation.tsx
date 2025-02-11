@@ -12,11 +12,11 @@ const images = [
 
 const Consultation = () => {
   return (
-    <section className="relative min-h-screen bg-secondary overflow-hidden pt-20 ">
+    <section className="relative bg-secondary overflow-hidden md:pt-28 pt-10 ">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-radial from-white/20 to-secondary z-10" />
+      <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
-      <div className="flex flex-col md:justify-between md:gap-60 gap-10 relative z-20  ">
+      <div className="flex flex-col md:justify-between md:gap-40 gap-10 relative z-20  ">
         <div className=" container mx-auto text-center ">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Schedule Consultation
@@ -29,7 +29,7 @@ const Consultation = () => {
           <Button variant="primary" size="lg" className="lg:w-auto w-full">Schedule Meeting</Button>
         </div>
 
-        <div className="flex md:flex-row flex-col mx-auto text-center w-full border">
+        <div className="flex md:flex-row flex-col mx-auto text-center w-full ">
           {images.map((image, index) => (
             <div
               key={index}

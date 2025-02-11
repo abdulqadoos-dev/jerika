@@ -4,8 +4,8 @@ import MissionImage from "@/public/images/mission-image.png"
 
 const MissionSection = () => {
   return (
-    <section className="container mx-auto px-4 py-16">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+    <section className="container mx-auto px-4 py-16 md:py-48">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 ">
         {/* Image Container with rounded corners */}
         <div className="w-full md:w-1/2 relative">
           <div className="relative aspect-square w-full max-w-lg  mx-auto rounded-3xl overflow-hidden">

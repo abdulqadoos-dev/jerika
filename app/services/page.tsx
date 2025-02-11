@@ -7,7 +7,7 @@ export default function Services() {
    return (
       <>
          <section className="relative min-h-screen bg-header-background bg-no-repeat bg-cover flex items-center">
-            <div className="absolute inset-0 backdrop-blur-2xl bg-gradient-to-b from-white/10 to-white" />
+            <div className="absolute inset-0 backdrop-blur-2xl bg-gradient-to-b from-transparent to-white" />
 
             <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 flex flex-col md:gap-40 gap-10">
 

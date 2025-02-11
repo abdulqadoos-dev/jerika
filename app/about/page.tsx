@@ -2,12 +2,6 @@ import Image from 'next/image';
 
 import AboutMain from "@/public/images/about-main.png";
 
-import ManagedITServices from "@/app/components/ManagedITServices";
-import WebServicesSection from '@/app/components/WebServicesSection';
-import SecurityServices from '@/app/components/SecurityServices';
-import NetworkMonitoringServices from '@/app/components/NetworkMonitoringServices';
-import ITStaffingSection from '@/app/components/ITStaffingSection';
-
 import Consultation from '@/app/components/Consultation';
 import OurStory from '@/app/components/OurStory';
 import CeoSection from '@/app/components/CeoSection';
@@ -54,7 +48,7 @@ export default function About() {
       <>
          <section className="relative min-h-screen bg-secondary bg-no-repeat bg-cover">
 
-            <div className="absolute inset-0 bg-gradient-radial from-white/10 to-secondary z-10" />
+            <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
             <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 ">
                <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-2 lg:gap-24 ">

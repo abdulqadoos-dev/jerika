@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 z-40 w-full px-5">
-      <div className={`mx-auto container px-10 sm:px-6 lg:px-8 bg-black/90 backdrop-blur text-white lg:rounded-full  my-5 ${isMenuOpen ? "rounded-2xl" : "rounded-2xl"} `}>
+      <div className={`mx-auto container px-10 sm:px-6 lg:px-8 bg-black backdrop-blur text-white lg:rounded-full  my-5 ${isMenuOpen ? "rounded-2xl" : "rounded-2xl"} `}>
         <div className="flex justify-between items-center  h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
