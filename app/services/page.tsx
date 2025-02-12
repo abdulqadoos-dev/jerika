@@ -1,6 +1,6 @@
 
 import Consultation from '@/app/components/Consultation';
-import WebServicesSection from '@/app/components/WebServicesSection';
+import ServicesSection from '@/app/components/ServicesSection';
 import FAQSection from '@/app/components/FAQSection';
 
 export default function Services() {
@@ -125,7 +125,7 @@ export default function Services() {
 
          </section>
 
-         <WebServicesSection />
+         <ServicesSection />
          <FAQSection />
          <Consultation />
 

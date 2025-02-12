@@ -134,27 +134,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {/* {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-3 py-2 rounded-md text-xl font-bold
-                    ${pathname === item.href
-                      ? 'text-primary bg-secondary'
-                      : 'text-white hover:text-primary hover:bg-secondary'
-                    }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )} */}
+
       </div>
     </header>
   );
