@@ -40,14 +40,14 @@ const ContactUs = () => {
 
               <div className="flex items-end flex-col gap-2">
                 <span className="text-7xl text-white/15 font-bold">02</span>
-                <a href="tel:+16503197284" className="text-2xl font-bold text-white/80">
-                  +1 (650) 319-7284
+                <a href="" className="text-2xl font-bold text-white/80">
+                (519) 788-9917 , (647) 270-6400
                 </a>
               </div>
 
               <div className="flex items-end flex-col gap-2">
                 <span className="text-7xl text-white/15 font-bold">03</span>
-                <p className="text-2xl font-bold text-white/80 text-right">95 Third Street, 2nd Floor, San Francisco, California 94103, US</p>
+                <p className="text-2xl font-bold text-white/80 text-right">1 King Street West, Toronto, ON M5H 1A1</p>
 
               </div>
             </div>
