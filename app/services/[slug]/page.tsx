@@ -14,7 +14,7 @@ interface Article {
 
 const articles: Article[] = [ 
    {
-      title: "Jerika Inc.: Your Partner in Managed IT Services",
+      title: "Your Partner in Managed IT Services",
       slug: "jerika-inc-managed-it-services",
       sections: [
         { heading: null, content: "Jerika Inc.... (rest of the content)" },
