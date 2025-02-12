@@ -15,7 +15,6 @@ export default function Services() {
                   <h2 className="font-extrabold text-secondary md:text-8xl text-3xl ">
                      <span className="font-light italic">Our</span> Services
                   </h2>
-                  {/* <p className="text-primary text-lg md:text-4xl md:tracking-[0.25em] font-bold ">We Get the Right Person for the Right Job</p> */}
                </div>
 
 

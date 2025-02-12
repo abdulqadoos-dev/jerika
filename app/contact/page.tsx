@@ -12,20 +12,6 @@ const ContactUs = () => {
         <h2 className="text-white text-7xl my-8 text-center font-bold">Contact  <span className="italic font-thin">Us </span> </h2>
 
         <div className="grid md:grid-cols-2 items-center gap-12">
-          {/* Content Section */}
-          {/* <div className="space-y-6">
-            <h2 className="text-white text-6xl">Contact Us</h2>
-            <p className="text-lg text-white/70">
-              We’re looking forward to speaking with you about your company’s IT needs.Find the answers to your questions here. Our Support Specialist is ready to help with whatever you need.
-              We offer a full range of IT development, implementation and maintenance services; including secure and proficient network design, successful systems integration,
-              effective project management and installation of technologies, right through to pro-active and reactive desktop support.
-            </p>
-
-            <p className="text-lg text-white font-bold">
-              Contact us now and learn more about our Managed IT Services.
-            </p>
-          </div> */}
-
 
           <div className="w-full text-white py-8">
             <div className="container mx-auto px-4 flex flex-col justify-between items-end  gap-10">
