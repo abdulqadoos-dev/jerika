@@ -36,7 +36,7 @@ const CeoSection = () => {
             </div>
             
             <p className="text-secondary/70 text-lg leading-relaxed">
-              Manprit has a bachelor's degree in Commerce from Concordia University, Montreal. Previously, she has worked in Montreal and Toronto's Financial District. She brings a wealth of expertise in the areas of metrics, reporting, mergers and acquisitions, capital markets, investor relations, forecasting, planning, and analysis. Her experience combines strategic vision with the discipline of controller-ship.
+              Manprit has a bachelor&apos;s degree in Commerce from Concordia University, Montreal. Previously, she has worked in Montreal and Toronto&apos;s Financial District. She brings a wealth of expertise in the areas of metrics, reporting, mergers and acquisitions, capital markets, investor relations, forecasting, planning, and analysis. Her experience combines strategic vision with the discipline of controller-ship.
             </p>
           </div>
         </div>

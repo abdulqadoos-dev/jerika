@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 
 import Link from 'next/link';
-import { Menu, X, Moon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
 import Logo from "@/public/images/logo.png"

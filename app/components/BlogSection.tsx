@@ -1,13 +1,22 @@
 import Image from "next/image";
-
-
 import Button from "@/app/components/ui/Button";
-
-
 import { Heart, MessageSquare, Calendar } from "lucide-react";
 
+interface BlogPost {
+  id: number; 
+  title: string;
+  image: { src: string; height: number; width: number; blurDataURL?: string };
+  date: string;
+  likes: string;
+  comments: string;
+  description: string;
+}
 
-const BlogSection = ({blogPosts}: any) => {
+interface BlogSectionProps {
+  blogPosts: BlogPost[];
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
   return (
     <section className="w-full bg-white container mx-auto px-4 py-28">
       <h1 className="text-center mb-12 text-6xl font-bold text-secondary">
@@ -15,15 +24,16 @@ const BlogSection = ({blogPosts}: any) => {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post: any) => (
+        {blogPosts.map((post) => (
           <article key={post.id} className="bg-white rounded-3xl overflow-hidden group">
-
-              <Image
-                src={post.image}
-                alt={post.title}
-                className=""
-                priority
-              />
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={500} // Add width and height for better image rendering
+              height={300} // Adjust these values as needed
+              className=""
+              priority
+            />
 
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4 line-clamp-2 text-secondary">
@@ -54,7 +64,9 @@ const BlogSection = ({blogPosts}: any) => {
       </div>
 
       <div className="text-center mt-12">
-        <Button variant="primary" size="lg" className="lg:w-auto min-w-40"> See More</Button>
+        <Button variant="primary" size="lg" className="lg:w-auto min-w-40">
+          See More
+        </Button>
       </div>
     </section>
   );

@@ -6,17 +6,6 @@ import Link from "next/link";
 const ServicesGrid = () => {
 
 
-  const services = [
-    { number: "01", title: "Managed IT Services", "slug": "jerika-inc-managed-it-services" },
-    { number: "02", title: "Managed Security Services", "slug": "managed-security-services" },
-    { number: "03", title: "Data Backup + Disaster Recovery", "slug": "data-backup-disaster-recovery" },
-    { number: "04", title: "Web Development and Hosting", "slug": "web-development-hosting" },
-    { number: "05", title: "Co-Managed IT Services", "slug": "co-managed-it-services" },
-    { number: "06", title: "Cloud Hosting Services", "slug": "cloud-hosting-services" },
-    { number: "08", title: "Social Media Marketing and Branding", "slug": "social-media-marketing-branding" },
-  ]
-
-
   return (
     <section className="bg-black py-20 relative overflow-hidden">
 

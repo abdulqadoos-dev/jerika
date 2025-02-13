@@ -14,11 +14,11 @@ export default function ManagedITServices() {
                <br />Managed IT Services.
             </h1>
             <p className="text-secondary/70">
-               It all depends on who is your IT Service provider. That's why we encourage
+              {` It all depends on who is your IT Service provider. That's why we encourage
                clients to ask questions when you are searching for an IT provider and
                understand what's included in the managed services contract. We offer a large
                variety of services. They can be either included in the our managed services
-               solution or we can scope out, design and implement as part of a your IT needs
+               solution or we can scope out, design and implement as part of a your IT needs`}
             </p>
          </div>
          <div className="relative">

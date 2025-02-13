@@ -83,8 +83,8 @@ const FAQSection = () => {
         Frequently Asked Questions
       </h2>
       <p className="text-center mb-8 text-secondary/70">
-        There are tons of reasons why you should choose Jerika Inc.Here's some of
-        the answers people commonly ask us.
+        {`There are tons of reasons why you should choose Jerika Inc.Here's some of
+        the answers people commonly ask us.`}
       </p>
 
       <div className="space-y-4">
