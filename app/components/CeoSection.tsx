@@ -30,9 +30,9 @@ const CeoSection = () => {
                   Co-Founder
                 </span>
               </h2>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black">
+              {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-black">
                 Manprit Nijjar.
-              </h1>
+              </h1> */}
             </div>
             
             <p className="text-secondary/70 text-lg leading-relaxed">
