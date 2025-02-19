@@ -17,7 +17,7 @@ const OurStory = () => {
                </h1>
 
                {/* Left side - Image */}
-               <div className="col-span-2">
+               <div className="md:col-span-2 col-span-5">
                   <Image
                      src={StoryImage}
                      alt="IT Professional working"
@@ -28,7 +28,7 @@ const OurStory = () => {
 
                {/* Right side - Content */}
 
-               <div className="space-y-4 col-span-3">
+               <div className="space-y-4 md:col-span-3 col-span-5">
                   <div>
                      <h2 className="text-xl font-semibold mb-1 text-secondary">Jerika Inc.</h2>
                      <p className="text-secondary/70 leading-relaxed">

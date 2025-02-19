@@ -3,7 +3,7 @@ import Button from "@/app/components/ui/Button";
 
 const ContactUs = () => {
   return (
-    <section className="relative min-h-screen bg-secondary bg-no-repeat bg-cover  h-screen flex items-center">
+    <section className="relative min-h-screen bg-secondary bg-no-repeat bg-cover  min-h-screen flex items-center">
 
       <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
@@ -26,7 +26,7 @@ const ContactUs = () => {
 
               <div className="flex items-end flex-col gap-2">
                 <span className="text-7xl text-white/15 font-bold">02</span>
-                <a href="" className="text-2xl font-bold text-white/80">
+                <a href="" className="text-2xl text-end font-bold text-white/80">
                 (519) 788-9917 , (647) 270-6400
                 </a>
               </div>
