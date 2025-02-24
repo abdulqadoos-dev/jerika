@@ -4,7 +4,7 @@ import AboutMain from "@/public/images/about-main.png";
 
 import Consultation from '@/app/components/Consultation';
 import OurStory from '@/app/components/OurStory';
-import CeoSection from '@/app/components/CeoSection';
+
 import BlogSection from '@/app/components/BlogSection';
 
 import BlogOne from "@/public/images/blog-1.png";
@@ -110,7 +110,7 @@ export default function About() {
       </section>
 
       <OurStory />
-      {/* <CeoSection /> */}
+
       <BlogSection blogPosts={blogPosts} />
       <Consultation />
     </>
