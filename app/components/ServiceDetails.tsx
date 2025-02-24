@@ -96,7 +96,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                   <div className="container mx-auto px-4 flex flex-col justify-between  gap-10">
 
                      <div className="flex flex-col gap-2">
-                        <span className="text-5xl text-white/15 font-bold">01</span>
+                        <span className="text-5xl text-white/50 font-bold">01</span>
                         <a href="mailto:constact@softdevai.com" className="text-xl font-bold text-white/80">
                            info@jerika.ca
                         </a>
@@ -104,14 +104,14 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                      </div>
 
                      <div className="flex flex-col gap-2">
-                        <span className="text-5xl text-white/15 font-bold">02</span>
+                        <span className="text-5xl text-white/50 font-bold">02</span>
                         <a href="" className="text-xl font-bold text-white/80">
-                           (519) 788-9917 , (647) 270-6400
+                           (647) 270-6400
                         </a>
                      </div>
 
                      <div className="flex flex-col gap-2">
-                        <span className="text-5xl text-white/15 font-bold">03</span>
+                        <span className="text-5xl text-white/50 font-bold">03</span>
                         <p className="text-xl font-bold text-white/80 ">1 King Street West, Toronto, ON M5H 1A1</p>
 
                      </div>

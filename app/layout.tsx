@@ -7,14 +7,14 @@ import { Ubuntu } from 'next/font/google';
 
 const ubuntu = Ubuntu({
   weight: ['300', '400', '700'], 
-  style: ['normal', 'italic'],  
-  subsets: ['latin'],          
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
   display: 'swap', 
 });
 
 export const metadata: Metadata = {
-  title: "Jerika",
-  description: "jerika",
+  title: "Jerika inc.",
+  description: "Simplifying IT, Empowering Business",
 };
 
 export default function RootLayout({

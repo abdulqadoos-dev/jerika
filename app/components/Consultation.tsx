@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from "@/app/components/ui/Button";
 
 const images = [
@@ -12,12 +13,12 @@ const images = [
 
 const Consultation = () => {
   return (
-    <section className="relative bg-secondary overflow-hidden md:pt-28 pt-10 ">
+    <section className="relative bg-secondary overflow-hidden md:pt-28 pt-10 p-5">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
       <div className="flex flex-col md:justify-between md:gap-40 gap-10 relative z-20  ">
-        <div className=" container mx-auto text-center ">
+        <div className="container mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Schedule Consultation
             <span className="block">with one of our Experts.</span>
@@ -26,7 +27,9 @@ const Consultation = () => {
             Take the first step towards a brighter future and supercharge your business with
             cutting-edge technologies, expert guidance, and unparalleled support.
           </p>
-          <Button variant="primary" size="lg" className="lg:w-auto w-full">Schedule Meeting</Button>
+          <Button variant="primary" size="lg" className="lg:w-auto w-full">
+            <Link href="https://jerika.screenconnect.com/" target='_blank'> Schedule Meeting</Link>
+            </Button>
         </div>
 
         <div className="flex md:flex-row flex-col mx-auto text-center w-full ">
@@ -46,7 +49,6 @@ const Consultation = () => {
             </div>
           ))}
         </div>
-
 
       </div>
 

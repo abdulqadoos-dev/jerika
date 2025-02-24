@@ -32,7 +32,7 @@ export default function Home() {
               </div>
 
               <div className="absolute lg:bottom-12 lg:right-12 lg:p-4 bottom-5 right-5 p-2 bg-white/30 backdrop-blur rounded-xl font-bold border-2 border-primary text-secondary">
-                <div className="lg:text-5xl text-2xl">10+</div>
+                <div className="lg:text-5xl text-2xl">20+</div>
                 <div className="lg:text-lg text-sm text-secondary/70">Professionals</div>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
                   <div className="flex gap-12  lg:gap-2 xl:gap-10">
                     <div>
-                      <div className="text-3xl font-bold">400+</div>
+                      <div className="text-3xl font-bold">65+</div>
                       <div className="text-secondary/70">Projects Done</div>
                     </div>
                     <div>

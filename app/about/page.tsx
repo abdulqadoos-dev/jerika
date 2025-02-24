@@ -95,7 +95,7 @@ export default function About() {
                 />
               </div>
 
-              <div className="absolute lg:-bottom-6 -bottom-5 left-0 lg:p-4 p-1 font-bold text-white">
+              <div className="absolute lg:-bottom-10 -bottom-5 left-0 lg:p-4 p-1 font-bold text-white">
                 <div className="lg:text-5xl text-2xl">50+</div>
                 <div className="lg:text-lg text-sm text-white/70">Active Exprets</div>
               </div>

@@ -30,9 +30,8 @@ const OurStory = () => {
 
                <div className="space-y-4 md:col-span-3 col-span-5">
                   <div>
-                     <h2 className="text-xl font-semibold mb-1 text-secondary">Jerika Inc.</h2>
                      <p className="text-secondary/70 leading-relaxed">
-                        is founded on the principles of providing superior professional expertise and comprehensive solutions for our clients complete IT needs. We offer a full range of IT development, implementation and maintenance services; including a secure and proficient network design, successful systems integration, effective project management and installation of technologies, right through to pro-active and reactive desktop support. We specialize in IT services but also provide an excellent support for website designing, architecture, and data entry, as well as internal projects to support our own growing business.
+                        <b>Jerika Inc </b>is founded on the principles of providing superior professional expertise and comprehensive solutions for our clients complete IT needs. We offer a full range of IT development, implementation and maintenance services; including a secure and proficient network design, successful systems integration, effective project management and installation of technologies, right through to pro-active and reactive desktop support. We specialize in IT services but also provide an excellent support for website designing, architecture, and data entry, as well as internal projects to support our own growing business.
                      </p>
                   </div>
 

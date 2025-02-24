@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
-import Logo from "@/public/images/logo.png"
-import Image from "next/image"
+import Logo from "@/public/images/logo.png";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
