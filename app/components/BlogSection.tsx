@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "@/app/components/ui/Button";
 import { Heart, MessageSquare, Calendar } from "lucide-react";
+import Link from 'next/link';
 
 interface BlogPost {
   id: number; 
@@ -65,7 +66,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
 
       <div className="text-center mt-12">
         <Button variant="primary" size="lg" className="lg:w-auto min-w-40">
-          See More
+          <Link href="/blogs"> See More </Link>
         </Button>
       </div>
     </section>

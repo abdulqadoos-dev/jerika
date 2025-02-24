@@ -71,9 +71,6 @@ const Footer = () => {
               <a href="tel:+16472706400" className="block hover:text-primary">
                 (647) 270-6400
               </a>
-              <a href="tel:+15197889917" className="block hover:text-primary">
-                (519) 788-9917
-              </a>
               </div>
             </div>
           </div>

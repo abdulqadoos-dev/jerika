@@ -3,7 +3,7 @@ import Button from "@/app/components/ui/Button";
 
 const ContactUs = () => {
   return (
-    <section className="relative min-h-screen bg-secondary bg-no-repeat bg-cover  min-h-screen flex items-center">
+    <section className="relative  bg-secondary bg-no-repeat bg-cover  min-h-screen flex items-center">
 
       <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
@@ -17,7 +17,7 @@ const ContactUs = () => {
             <div className="container mx-auto px-4 flex flex-col justify-between items-end  gap-10">
 
               <div className="flex items-end flex-col gap-2">
-                <span className="text-7xl text-white/15 font-bold">01</span>
+                <span className="text-7xl text-white/50 font-bold">01</span>
                 <a href="mailto:constact@softdevai.com" className="text-2xl font-bold text-white/80">
                   info@jerika.ca
                 </a>
@@ -25,14 +25,14 @@ const ContactUs = () => {
               </div>
 
               <div className="flex items-end flex-col gap-2">
-                <span className="text-7xl text-white/15 font-bold">02</span>
+                <span className="text-7xl text-white/50 font-bold">02</span>
                 <a href="" className="text-2xl text-end font-bold text-white/80">
-                (519) 788-9917 , (647) 270-6400
+                (647) 270-6400
                 </a>
               </div>
 
               <div className="flex items-end flex-col gap-2">
-                <span className="text-7xl text-white/15 font-bold">03</span>
+                <span className="text-7xl text-white/50 font-bold">03</span>
                 <p className="text-2xl font-bold text-white/80 text-right">1 King Street West, Toronto, ON M5H 1A1</p>
 
               </div>

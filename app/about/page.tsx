@@ -110,7 +110,7 @@ export default function About() {
       </section>
 
       <OurStory />
-      <CeoSection />
+      {/* <CeoSection /> */}
       <BlogSection blogPosts={blogPosts} />
       <Consultation />
     </>
