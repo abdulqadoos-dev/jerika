@@ -2,6 +2,7 @@
 import Consultation from '@/app/components/Consultation';
 import ServicesSection from '@/app/components/ServicesSection';
 import FAQSection from '@/app/components/FAQSection';
+import AnimatedHeading from '@/app/components/AnimatedHeading';
 
 export default function Services() {
    return (
@@ -18,9 +19,9 @@ export default function Services() {
                </div>
 
 
-               <div className="grid md:grid-cols-4 grid-cols-2 gap-12 text-center">
+               <div className="grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-2 text-center">
                   <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 h-80 flex items-center justify-center flex-col">
-                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                     <div className="p-1 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={86}
                            height={92}
@@ -42,7 +43,7 @@ export default function Services() {
                   </div>
 
                   <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col">
-                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                     <div className=" p-1 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={92}
                            height={92}
@@ -64,7 +65,7 @@ export default function Services() {
                   </div>
 
                   <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center h-80 flex items-center justify-center flex-col">
-                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                     <div className=" p-1 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={79}
                            height={92}
@@ -86,7 +87,7 @@ export default function Services() {
                   </div>
 
                   <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8  h-80 flex items-center justify-center flex-col">
-                     <div className=" p-3 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
+                     <div className=" p-1 md:p-5 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg
                            width={91}
                            height={92}
@@ -108,7 +109,6 @@ export default function Services() {
                   </div>
 
                </div>
-
             </div>
          </section>
 
@@ -117,9 +117,7 @@ export default function Services() {
 
             <div className="text-center">
                <p className="font-bold md:text-lg text-sm uppercase text-secondary/70">what we do</p>
-               <h2 className="text-3xl md:text-5xl  font-bold text-secondary max-w-6xl mx-auto">
-                  Empower Your Business with Innovative IT Solutions: Seamless Integration,  Robust Security, and  Unmatched Support, Service, SLA
-               </h2>
+               <AnimatedHeading />
             </div>
 
          </section>

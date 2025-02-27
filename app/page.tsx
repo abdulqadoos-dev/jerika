@@ -46,7 +46,6 @@ export default function Home() {
               </h1>
 
               {/* CTA Box */}
-
               <div className="bg-white/20 backdrop-blur rounded-2xl p-6 shadow-lg border-2 border-primary">
                 <div className="flex items-center justify-between flex-col-reverse gap-5 lg:gap-3 xl:gap-5 lg:flex-row ">
 
@@ -66,7 +65,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
 
               {/* Business Description */}
               <div className="text-secondary space-y-2">
@@ -88,7 +86,6 @@ export default function Home() {
       <MissionSection />
 
       <Consultation />
-
 
     </>
   );
