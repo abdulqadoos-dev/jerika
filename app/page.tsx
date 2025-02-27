@@ -45,7 +45,7 @@ export default function Home() {
                 <span className="text-sm lg:text-xl xl:text-2xl text-secondary/90 uppercase"> Simplifying IT, Empowering Business</span>
               </h1>
 
-              {/* CTA Box */} 
+              {/* CTA Box */}
 
               <div className="bg-white/20 backdrop-blur rounded-2xl p-6 shadow-lg border-2 border-primary">
                 <div className="flex items-center justify-between flex-col-reverse gap-5 lg:gap-3 xl:gap-5 lg:flex-row ">
@@ -56,11 +56,11 @@ export default function Home() {
 
                   <div className="flex gap-12  lg:gap-2 xl:gap-10">
                     <div>
-                      <div className="text-3xl font-bold">65+</div>
+                      <div className="text-3xl font-bold">50+</div>
                       <div className="text-secondary/70">Projects Done</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold">50+</div>
+                      <div className="text-3xl font-bold">20+</div>
                       <div className="text-secondary/70">Active Experts</div>
                     </div>
                   </div>
@@ -72,10 +72,7 @@ export default function Home() {
               <div className="text-secondary space-y-2">
                 <h2 className="text-3xl font-bold">Business with Jerika Inc.</h2>
                 <p className="text-secondary/70">
-                  With over 2000+ passionate and experienced software engineers with professional
-                  skillsets in 100+ technologies, in your timezone. With over 2000+ passionate and
-                  experienced software engineers with professional skillsets in 100+ technologies, in
-                  your timezone.
+                With a team of 20+ skilled engineers in your timezone, Jerika Inc. is dedicated to delivering innovative, tailored solutions for your business. We prioritize seamless integration, efficiency, and on-time execution to bring your vision to life. Whether you need IT infrastructure enhancements, brand management, or social media optimization, our experts are here to help. Let’s collaborate to drive your business forward with cutting-edge technology and strategic insights. At Jerika Inc., your success is our priority.
                 </p>
               </div>
             </div>

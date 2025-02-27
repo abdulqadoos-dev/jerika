@@ -1,5 +1,6 @@
 
 import Button from "@/app/components/ui/Button";
+import Link from 'next/link';
 
 const Support = () => {
   return (
@@ -12,7 +13,9 @@ const Support = () => {
         <div className="space-y-10 text-center px-4">
           <h2 className="text-white text-7xl font-bold  ">Remote <span className="italic font-thin">Support</span> </h2>
           <div className="text-5xl text-white/70 flex justify-center gap-5 w-full md:flex-row flex-col">
-            Click <Button size="lg">Connect Now</Button>  For Technical Assistance
+            Click <Button size="lg">
+              <Link href="https://jerika.screenconnect.com/" target='_blank'>  Connect Now</Link>
+            </Button>  For Technical Assistance
           </div>
         </div>
 

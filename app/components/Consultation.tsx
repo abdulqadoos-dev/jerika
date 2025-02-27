@@ -28,8 +28,8 @@ const Consultation = () => {
             cutting-edge technologies, expert guidance, and unparalleled support.
           </p>
           <Button variant="primary" size="lg" className="lg:w-auto w-full">
-            <Link href="https://jerika.screenconnect.com/" target='_blank'> Schedule Meeting</Link>
-            </Button>
+            <Link href="/contact" target='_blank'> Schedule Meeting</Link>
+          </Button>
         </div>
 
         <div className="flex md:flex-row flex-col mx-auto text-center w-full ">
