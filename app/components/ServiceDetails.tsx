@@ -13,6 +13,7 @@ interface Section {
 interface Article {
    title: string;
    slug: string;
+   image?: string;
    sections: Section[];
 }
 
@@ -26,15 +27,17 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
          <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
          <div className="container mx-auto relative z-20">
-            <h2 className="text-white md:text-7xl text-3xl my-8 mx-10 font-bold">
+
+            <h2 className="text-white md:text-6xl text-3xl my-8 mx-10 font-bold">
                {article.title}
             </h2>
 
             <div className="grid md:grid-cols-3 gap-10 items-start">
                <div className="bg-black text-white md:col-span-2 space-y-10 p-10 rounded-xl">
+                  {article.image && <img src={article.image} className='w-full object-cover rounded' />}
                   {article.sections.map((section, index) => (
                      <div className="space-y-5" key={index}>
-                        {section.heading && <h2 className="text-4xl">{section.heading}</h2>}
+                        {section.heading && <h2 className="lg:text-4xl text-2xl">{section.heading}</h2>}
                         {section.content && <p>{section.content}</p>}
                         {section.list_items && (
                            <ul className="list-disc pl-6 space-y-2">
@@ -55,7 +58,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
 
                   <form className="space-y-6">
                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-white/70">
+                        <label htmlFor="name" className="block text-sm font-medium text-white/40">
                            Name
                         </label>
                         <input
@@ -67,7 +70,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                      </div>
 
                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-white/70">
+                        <label htmlFor="email" className="block text-sm font-medium text-white/40">
                            Email
                         </label>
                         <input
@@ -79,7 +82,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                      </div>
 
                      <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-white/70">
+                        <label htmlFor="message" className="block text-sm font-medium text-white/40">
                            Message
                         </label>
                         <textarea

@@ -1,15 +1,14 @@
-import Image from "next/image";
-import Button from "@/app/components/ui/Button";
 import { Heart, MessageSquare, Calendar } from "lucide-react";
 import Link from 'next/link';
 
 interface BlogPost {
-  id: number; 
+  id: number;
   title: string;
-  image: { src: string; height: number; width: number; blurDataURL?: string };
+  slug: string;
+  image?: string;
   date: string;
-  likes: string;
-  comments: string;
+  likes?: string;
+  comments?: string;
   description: string;
 }
 
@@ -24,51 +23,49 @@ const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
         See <span className="italic font-normal">Our Latest</span> Blog!
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
         {blogPosts.map((post) => (
-          <article key={post.id} className="bg-white rounded-3xl overflow-hidden group">
-            <Image
-              src={post.image}
-              alt={post.title}
-              width={500} // Add width and height for better image rendering
-              height={300} // Adjust these values as needed
-              className=""
-              priority
-            />
+          <Link href={`/blogs/${post.slug}`} key={post.id} className="bg-white rounded-3xl overflow-hidden group hover:scale-105 transition-all">
+            <img src={post.image} className="scale-90" alt="" />
 
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4 line-clamp-2 text-secondary">
                 {post.title}
               </h2>
 
+              <p className="text-gray-600 mb-4 line-clamp-2">
+                {post.description}
+              </p>
+
               <div className="flex items-center gap-6 mb-4 text-gray-600">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-5 h-5" />
                   <span>{post.date}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Heart className="w-5 h-5" />
-                  <span>{post.likes}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MessageSquare className="w-5 h-5" />
-                  <span>{post.comments}</span>
-                </div>
+                {post.likes && (
+                  <div className="flex items-center gap-2">
+                    <Heart className="w-5 h-5" />
+                    <span>{post.likes}</span>
+                  </div>
+                )}
+                {post.comments && (
+                  <div className="flex items-center gap-2">
+                    <MessageSquare className="w-5 h-5" />
+                    <span>{post.comments}</span>
+                  </div>
+                )}
               </div>
 
-              <p className="text-gray-600 mb-4 line-clamp-2">
-                {post.description}
-              </p>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
 
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <Button variant="primary" size="lg" className="lg:w-auto min-w-40">
           <Link href="/blogs"> See More </Link>
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 };
