@@ -56,8 +56,8 @@ const Header = () => {
           </nav>
 
           {/* Dark Mode Toggle - Desktop */}
-          <Link href="/contact">
-            <div className="hidden md:flex justify-end w-36">
+          <Link href="https://calendly.com/jerika-info/30min?background_color=1a1a1a&text_color=ffffff&primary_color=cda15b&month=2025-03">
+            <div className="hidden md:flex justify-end w-48">
 
               <button className="group flex items-center transition-all duration-300 rounded-full overflow-hidden bg-primary hover:pr-2">
                 {/* Icon Container */}
@@ -77,8 +77,8 @@ const Header = () => {
                 </div>
 
                 {/* Text that expands */}
-                <span className="w-0 group-hover:w-36 overflow-hidden transition-all duration-300 text-secondary font-bold whitespace-nowrap">
-                  Contact Us
+                <span className="w-0 group-hover:w-40 overflow-hidden transition-all duration-300 text-secondary font-bold whitespace-nowrap">
+                 Schedule Meeting
                 </span>
               </button>
             </div>

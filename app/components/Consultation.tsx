@@ -28,7 +28,7 @@ const Consultation = () => {
             cutting-edge technologies, expert guidance, and unparalleled support.
           </p>
           <Button variant="primary" size="lg" className="lg:w-auto w-full">
-            <Link href="/contact" target='_blank'> Schedule Meeting</Link>
+            <Link href="https://calendly.com/jerika-info/30min?background_color=1a1a1a&text_color=ffffff&primary_color=cda15b&month=2025-03" target='_blank'> Schedule Meeting</Link>
           </Button>
         </div>
 

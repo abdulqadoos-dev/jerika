@@ -49,8 +49,8 @@ export default function Home() {
               <div className="bg-white/20 backdrop-blur rounded-2xl p-6 shadow-lg border-2 border-primary">
                 <div className="flex items-center justify-between flex-col-reverse gap-5 lg:gap-3 xl:gap-5 lg:flex-row ">
 
-                  <Link href="/contact" className='w-full md:w-auto'>
-                    <Button variant="primary" size="lg" className="lg:w-auto w-full">Contact Us</Button>
+                  <Link href="https://calendly.com/jerika-info/30min?background_color=1a1a1a&text_color=ffffff&primary_color=cda15b&month=2025-03" className='w-full md:w-auto'>
+                    <Button variant="primary" size="lg" className="lg:w-auto w-full"> Schedule Meeting</Button>
                   </Link>
 
                   <div className="flex gap-12  lg:gap-2 xl:gap-10">
@@ -70,7 +70,7 @@ export default function Home() {
               <div className="text-secondary space-y-2">
                 <h2 className="text-3xl font-bold">Business with Jerika Inc.</h2>
                 <p className="text-secondary/70">
-                With a team of 20+ skilled engineers in your timezone, Jerika Inc. is dedicated to delivering innovative, tailored solutions for your business. We prioritize seamless integration, efficiency, and on-time execution to bring your vision to life. Whether you need IT infrastructure enhancements, brand management, or social media optimization, our experts are here to help. Let’s collaborate to drive your business forward with cutting-edge technology and strategic insights. At Jerika Inc., your success is our priority.
+                  With a team of 20+ skilled engineers in your timezone, Jerika Inc. is dedicated to delivering innovative, tailored solutions for your business. We prioritize seamless integration, efficiency, and on-time execution to bring your vision to life. Whether you need IT infrastructure enhancements, brand management, or social media optimization, our experts are here to help. Let’s collaborate to drive your business forward with cutting-edge technology and strategic insights. At Jerika Inc., your success is our priority.
                 </p>
               </div>
             </div>
