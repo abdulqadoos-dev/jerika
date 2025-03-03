@@ -1,14 +1,12 @@
-import { Heart, MessageSquare, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import Link from 'next/link';
 
 interface BlogPost {
   id: number;
   title: string;
   slug: string;
-  image?: string;
+  image: string;
   date: string;
-  likes?: string;
-  comments?: string;
   description: string;
 }
 
@@ -42,18 +40,6 @@ const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
                   <Calendar className="w-5 h-5" />
                   <span>{post.date}</span>
                 </div>
-                {post.likes && (
-                  <div className="flex items-center gap-2">
-                    <Heart className="w-5 h-5" />
-                    <span>{post.likes}</span>
-                  </div>
-                )}
-                {post.comments && (
-                  <div className="flex items-center gap-2">
-                    <MessageSquare className="w-5 h-5" />
-                    <span>{post.comments}</span>
-                  </div>
-                )}
               </div>
 
             </div>

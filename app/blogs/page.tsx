@@ -1,7 +1,15 @@
 import BlogSection from "@/app/components/BlogSection";
 
-export const blogPosts = [
+interface BlogPost {
+  id: number;
+  title: string;
+  slug: string;
+  image: string;
+  date: string;
+  description: string;
+}
 
+const blogPosts: BlogPost[] = [ // Changed to const inside the component
   {
     "id": 1,
     "title": "Explore New Era of Automation with Jerika Inc",
@@ -18,7 +26,6 @@ export const blogPosts = [
     "date": "03 Mar 2024",
     "description": "Transform your operations with our tailored IT services, designed for growth and innovation."
   },
-  
   {
     "id": 3,
     "title": "Step into the World of Smart Technology",
@@ -29,10 +36,8 @@ export const blogPosts = [
   }
 ];
 
-
-
 export default function Blog() {
   return (
     <BlogSection blogPosts={blogPosts} />
-  )
+  );
 }

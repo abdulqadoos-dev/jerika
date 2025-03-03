@@ -5,18 +5,6 @@ import AboutMain from "@/public/images/about-main.png";
 import Consultation from '@/app/components/Consultation';
 import OurStory from '@/app/components/OurStory';
 
-import BlogSection from '@/app/components/BlogSection';
-import { blogPosts } from '@/app/blogs/page';
-
-interface BlogPost {
-  id: number; 
-  title: string;
-  image: { src: string; height: number; width: number; blurDataURL?: string };
-  date: string;
-  likes: string;
-  comments: string;
-  description: string;
-}
 
 
 export default function About() {
@@ -78,7 +66,6 @@ export default function About() {
       </section>
 
       <OurStory />
-      <BlogSection blogPosts={blogPosts} />
       <Consultation />
     </>
   );
