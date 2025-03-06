@@ -22,7 +22,6 @@ const MissionSection = () => {
         {/* Content Container */}
         <div className="w-full md:w-1/2 space-y-6">
           <div className="space-y-2 text-secondary font-bold">
-            <p className="text-sm">Since 2020</p>
             <h2 className="text-4xl">Our Mission</h2>
           </div>
 

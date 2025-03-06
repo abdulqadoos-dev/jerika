@@ -2,7 +2,8 @@
 
 import React from 'react';
 
-import Button from "@/app/components/ui/Button";
+
+import ContactForm from '@/app/components/ContactForm';
 
 interface Section {
    heading: string | null;
@@ -55,47 +56,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                   <p className="text-lg text-white/80 font-bold">
                      Get in touch
                   </p>
-
-                  <form className="space-y-6">
-                     <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-white/40">
-                           Name
-                        </label>
-                        <input
-                           type="text"
-                           id="name"
-                           required
-                           className="mt-1 p-3 bg-white/10 backdrop-blur-lg block w-full rounded-lg text-white focus:outline-none "
-                        />
-                     </div>
-
-                     <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-white/40">
-                           Email
-                        </label>
-                        <input
-                           type="email"
-                           id="email"
-                           required
-                           className="mt-1 p-3 bg-white/10 backdrop-blur-lg block w-full rounded-lg text-white focus:outline-none"
-                        />
-                     </div>
-
-                     <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-white/40">
-                           Message
-                        </label>
-                        <textarea
-                           id="message"
-                           rows={4}
-                           required
-                           className="mt-1 p-3 bg-white/10 backdrop-blur-lg block w-full rounded-lg text-white focus:outline-none"
-                        ></textarea>
-                     </div>
-
-                     <Button variant="primary" size="lg" className="lg:w-auto min-w-40"> Send Message</Button>
-                  </form>
-
+                  <ContactForm title='' />
                   <div className="container mx-auto px-4 flex flex-col justify-between  gap-10">
 
                      <div className="flex flex-col gap-2">

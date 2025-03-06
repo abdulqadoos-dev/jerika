@@ -77,7 +77,7 @@ const articles: Article[] = [
                "heading": "The Jerika Inc. Advantage in Automation",
                "content": "Why choose Jerika Inc. for your automation needs?",
                "list_items": [
-                   "Expertise in Cutting-Edge Automation Technologies",
+                   "Expertise in Cutting-Edge Automation Technologies", 
                    "Customized Solutions for Optimal Efficiency",
                    "Commitment to Seamless Integration and Support",
                    "Focus on Driving Tangible Business Results"

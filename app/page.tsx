@@ -42,7 +42,7 @@ export default function Home() {
               <h1 className="text-4xl font-bold xl:text-6xl">
                 Jerika Inc.
                 <br />
-                <span className="text-sm lg:text-xl xl:text-2xl text-secondary/90 uppercase"> Simplifying IT, Empowering Business</span>
+                <span className="text-sm lg:text-xl xl:text-2xl text-secondary/90 uppercase"> Simplifying IT, Empowering Businesses</span>
               </h1>
 
               {/* CTA Box */}

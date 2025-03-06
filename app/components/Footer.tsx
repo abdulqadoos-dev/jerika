@@ -33,7 +33,7 @@ const Footer = () => {
               />
             </Link>
 
-            <p>Simplifying IT, Empowering Business</p>
+            <p>Simplifying IT, Empowering Businesses</p>
           </div>
 
           {/* Menu */}

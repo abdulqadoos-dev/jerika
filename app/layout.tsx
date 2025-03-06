@@ -14,7 +14,7 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: "Jerika inc.",
-  description: "Simplifying IT, Empowering Business",
+  description: "Simplifying IT, Empowering Businesses",
 };
 
 export default function RootLayout({
