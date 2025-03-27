@@ -10,7 +10,7 @@ import BrandsSlider from '@/app/components/BrandsSlider';
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-screen bg-header-background bg-no-repeat bg-cover">
+      <section className="relative  bg-header-background bg-no-repeat bg-cover">
         <div className="absolute inset-0 backdrop-blur-xl bg-white/15 " />
         <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 ">
           <div className="grid grid-cols-1 gap-10 items-center lg:grid-cols-2 xl:gap-24 ">
@@ -20,7 +20,7 @@ export default function Home() {
                 <Image
                   src={heroWoman}
                   alt="Professional woman with technology interface"
-                  className="w-full h-auto "
+                  className="w-full h-auto"
                   priority
                 />
               </div>

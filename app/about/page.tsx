@@ -10,7 +10,7 @@ import OurStory from '@/app/components/OurStory';
 export default function About() {
   return (
     <>
-      <section className="relative min-h-screen bg-secondary bg-no-repeat bg-cover">
+      <section className="relative bg-secondary bg-no-repeat bg-cover">
         <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
         <div className="container mx-auto lg:px-10 px-5 lg:py-32 py-28 relative z-10 ">

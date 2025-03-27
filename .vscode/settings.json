@@ -1,9 +1,6 @@
 {
   "editor.fontFamily": "JetBrains Mono",
-  "editor.tabSize": 3,
-  "editor.minimap.sectionHeaderFontSize": 10,
-  "debug.console.fontSize": 14,
-  "terminal.integrated.fontSize": 14,
-  "scm.inputFontSize": 14,
-  "editor.fontSize": 14
+  "editor.fontWeight": "400",              
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontWeight": "100"  
 }

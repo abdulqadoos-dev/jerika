@@ -26,7 +26,7 @@ const ServicesGrid = () => {
         </div>
 
 
-        <div className="flex w-full overflow-x-auto sm:overflow-hidden flex-col md:flex-row md:h-[60vh] gap-5">
+        <div className="flex w-full overflow-x-auto sm:overflow-hidden flex-col md:flex-row md:h-[600px] gap-5">
           {/* Column 1 */}
 
           <div className="hover:md:w-3/4 w-full md:w-1/3 lg:w-1/6 xl:w-1/6 flex flex-col gap-5 transition-all">

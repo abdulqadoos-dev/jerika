@@ -21,6 +21,7 @@ const Header = () => {
     { name: 'Blogs', href: '/blogs' },
     { name: 'Contact Us', href: '/contact' },
     { name: 'Support', href: '/support' },
+    { name: 'Careers', href: '/careers' },
   ];
 
   return (
@@ -33,10 +34,10 @@ const Header = () => {
               <Image
                 src={Logo}
                 alt="Jerika Inc Logo"
-                width={120}
-                height={40}
+                width={120} 
+                height={40} 
                 priority
-                className="object-contain"
+                className="object-contain md:w-[120px] md:h-[40px] w-[100px] h-[28px]"
               />
             </Link>
           </div>
@@ -78,7 +79,7 @@ const Header = () => {
 
                 {/* Text that expands */}
                 <span className="w-0 group-hover:w-40 overflow-hidden transition-all duration-300 text-secondary font-bold whitespace-nowrap">
-                 Schedule Meeting
+                  Schedule Meeting
                 </span>
               </button>
             </div>
@@ -88,7 +89,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-white hover:text-primary mt-2"
+              className="text-primary mt-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-expanded={isMenuOpen}
               aria-label="Toggle menu"
