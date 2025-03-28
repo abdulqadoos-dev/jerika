@@ -8,11 +8,11 @@ const ContactUs = () => {
 
   return (
     <>
-      <section className="relative bg-secondary bg-no-repeat bg-cover min-h-screen flex items-center">
+      <section className="relative bg-secondary bg-no-repeat bg-cover  md:py-32 py-8">
         <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
         <div className="container mx-auto relative z-20 mt-20">
-          <h2 className="text-white lg:text-7xl text-6xl my-8 text-center font-bold">
+          <h2 className="text-white lg:text-7xl text-5xl my-8 text-center font-bold">
             Contact <span className="italic font-thin">Us</span>
           </h2>
 

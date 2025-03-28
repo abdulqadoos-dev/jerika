@@ -16,8 +16,8 @@ interface BlogSectionProps {
 
 const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
   return (
-    <section className="w-full bg-white container mx-auto px-4 py-28">
-      <h1 className="text-center mb-12 text-6xl font-bold text-secondary">
+    <section className="w-full bg-white container mx-auto px-4 md:py-32 py-28 min-h-screen">
+      <h1 className="text-center mb-12 md:text-6xl text-4xl font-bold text-secondary">
         See <span className="italic font-normal">Our Latest</span> Blog!
       </h1>
 

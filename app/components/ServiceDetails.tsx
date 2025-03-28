@@ -24,7 +24,7 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
    }
 
    return (
-      <article className="relative min-h-screen bg-secondary bg-no-repeat bg-cover md:py-36 py-28 ">
+      <article className="relative  bg-secondary bg-no-repeat bg-cover md:py-36 py-28 ">
          <div className="absolute inset-0 bg-gradient-radial from-white/15 to-secondary z-10" />
 
          <div className="container mx-auto relative z-20">
