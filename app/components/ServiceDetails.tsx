@@ -77,7 +77,6 @@ const ServiceDetails: React.FC<{ article: Article }> = ({ article }) => {
                      <div className="flex flex-col gap-2">
                         <span className="text-5xl text-white/50 font-bold">03</span>
                         <p className="text-xl font-bold text-white/80 ">1 King Street West, Toronto, ON M5H 1A1</p>
-
                      </div>
                   </div>
                </div>

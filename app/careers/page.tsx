@@ -1,30 +1,8 @@
 import Button from "@/app/components/ui/Button";
 import Link from "next/link";
+import { jobsObject  } from "@/app/careers/jobs"; 
 
 const Career = () => {
-  const jobListings = [
-    {
-      id: 1,
-      title: "System/Network Administrator",
-      overview:
-        "We’re looking for a proactive and experienced System/Network Administrator to manage, maintain, and optimize our company’s IT systems and networks.",
-      slug: "system-network-administrator",
-    },
-    {
-      id: 2,
-      title: "Administrative Assistant",
-      overview:
-        "Coordinate the flow of information within the team and perform administrative tasks to support our operations.",
-      slug: "administrative-assistant",
-    },
-    {
-      id: 3,
-      title: "Social Media Manager / Content Creator",
-      overview:
-        "Develop, manage, and execute our social media strategy to grow our online presence and engage our audience.",
-      slug: "social-media-manager-content-creator",
-    },
-  ];
 
   return (
     <section className="relative  bg-secondary bg-no-repeat bg-cover min-h-screen md:py-36 py-28">
@@ -38,7 +16,7 @@ const Career = () => {
           </p>
 
           <div className="space-y-6">
-            {jobListings.map((job) => (
+            {jobsObject.map((job) => (
               <div
                 key={job.id}
                 className="bg-white/10 p-6 rounded-xl shadow-md text-left"
@@ -46,7 +24,13 @@ const Career = () => {
                 <h2 className="text-2xl font-semibold text-white">
                   {job.title}
                 </h2>
-                <p className="text-white/80 mt-2">{job.overview}</p>
+
+                <p className="font-bold text-primary mt-5">
+                  {job.type} | {job.salary}
+                </p>
+             
+                <p className="text-white/80 my-5">{job.overview}</p>
+
                 <Link href={`/careers/${job.slug}`}>
                   <Button className="mt-4">
                     View Details
